@@ -14,11 +14,8 @@ function App() {
     console.log(count);
 
     {
-      count <= 0 &&
-        e.target.addEventListener("click", () => {
-          console.log("test");
-          setCounter(count + 100);
-        });
+      count < 0 && setCounter(count + 110);
+      e.target.textContent = "Punch";
     }
   }
 

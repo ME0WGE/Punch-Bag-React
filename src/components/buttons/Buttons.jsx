@@ -1,5 +1,5 @@
 import "./buttons.css";
 
-export default function Btn() {
+export default function Buttons() {
   return;
 }

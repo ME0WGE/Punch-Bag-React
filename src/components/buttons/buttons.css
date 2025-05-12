@@ -27,6 +27,7 @@
 .btn:active {
   transform: scale(1.05);
 }
+
 .btn:hover {
   background: radial-gradient(
     circle,

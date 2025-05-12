@@ -10,6 +10,7 @@ function App() {
       <div className="title">
         <h1 className="h1-title">Punch Bag</h1>
       </div>
+      <ProgressBar />
     </>
   );
 }

@@ -15,10 +15,6 @@
 }
 
 body {
-  /* background: linear-gradient(#833ab4dc, #fd1d1d67); */
-  /* background: rgb(212, 191, 191); */
-  /* background: linear-gradient(#833ab4a1, rgb(212, 191, 191)); */
-
   background: #eee2ae;
   background: radial-gradient(
     circle,

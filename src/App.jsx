@@ -8,15 +8,14 @@ import ProgressBar from "./components/progressBar/ProgressBar";
 
 function App() {
   const [count, setCounter] = useState(100);
+  function handleClick() {
+    const newCount = Math.max(count - 10, 0);
+    setCounter(newCount);
+    console.log(newCount);
 
-  function Decrement(e) {
-    setCounter(count - 10);
-    console.log(count);
-
-    {
-      count < 0 && setCounter(count + 110);
-      e.target.textContent = "Punch";
-    }
+    let progressContent =
+      document.getElementsByClassName("progress-content")[0];
+    progressContent.style.width = `${newCount}%`;
   }
 
   return (
@@ -25,8 +24,8 @@ function App() {
         <h1 className="h1-title">Punch Bag</h1>
       </div>
       <ProgressBar />
-      <Images />
-      <Buttons count={count} function={Decrement} />
+      <Images status={count} />
+      <Buttons count={count} function={handleClick} set={setCounter} />
     </>
   );
 }

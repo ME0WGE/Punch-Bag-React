@@ -23,3 +23,16 @@
 
   cursor: pointer;
 }
+
+.btn:active {
+  transform: scale(1.05);
+}
+.btn:hover {
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(115, 88, 211, 1) 50%,
+    rgba(144, 84, 189, 1) 70%,
+    rgba(252, 70, 107, 1) 50%
+  );
+}

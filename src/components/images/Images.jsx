@@ -1,9 +1,12 @@
 import "./images.css";
 
+import img from "../../assets/bag.png";
+import img2 from "../../assets/deadbag.png";
+
 export default function Images(props) {
   // put bag images in variables
-  const bag = <img src="../src/assets/bag.png" alt="bag" />;
-  const deadBag = <img src="../src/assets/deadbag.png" alt="destroyed bag" />;
+  const bag = <img src={img} alt="bag" />;
+  const deadBag = <img src={img2} alt="destroyed bag" />;
 
   return (
     <>
